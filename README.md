@@ -32,10 +32,11 @@ To confirm the file copied correctly and to inspect its contents, `tcpdump` was 
 ![SCP transfer](images/tcpdump_check.jpg)
 
 3. **Run Zeek with Docker**
+
 I was not able to download the right version of zeek in my Kali machine, so i proceeded to use docker. 
 ![Docker/Zeek analysis](images/docker_run.jpg)
 
-4. **View Output Files**
+5. **View Output Files**
 
 ![Lab output files](images/output.jpg)
 
