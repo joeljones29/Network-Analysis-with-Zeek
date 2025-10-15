@@ -21,20 +21,23 @@ This lab investigates port scanning activity by capturing packets, securely tran
 
 ## Step-by-Step Walkthrough
 
-1. **Capture Network Traffic**
+1. **Transfer the Capture File**
 
-![Tcpdump output](images/image1.jpg)
+The first step involved using SCP to copy `portscan.pcap` from a remote Linux server to the Kali system:
+![Tcpdump output](images/scp.jpg)
 
-2. **Transfer pcap File**
+2. **Validate File Contents**
 
-![SCP transfer](images/image2.jpg)
+To confirm the file copied correctly and to inspect its contents, `tcpdump` was used:
+![SCP transfer](images/tcpdump_check.jpg)
 
 3. **Run Zeek with Docker**
-![Docker/Zeek analysis](images/image3.jpg)
+I was not able to download the right version of zeek in my Kali machine, so i proceeded to use docker. 
+![Docker/Zeek analysis](images/docker_run.jpg)
 
 4. **View Output Files**
 
-![Lab output files](images/image4.jpg)
+![Lab output files](images/output.jpg)
 
 ## Results
 Key findings, event logs generated, and insights from scanning activity.
@@ -47,6 +50,6 @@ Key findings, event logs generated, and insights from scanning activity.
 
 ## Credits & Resources
 - [Zeek Documentation](https://docs.zeek.org/)
-- Additional references here.
+
 
 
